@@ -1,0 +1,2 @@
+AnsiEsc.vba: call delete('/home/subhasis/.vim/plugin/AnsiEscPlugin.vim')|call delete('/home/subhasis/.vim/autoload/AnsiEsc.vim')|call delete('/home/subhasis/.vim/plugin/cecutil.vim')|call delete('/home/subhasis/.vim/doc/AnsiEsc.txt')
+supertab.vmb: call delete('/Users/subhasis/.vim/doc/supertab.txt')|call delete('/Users/subhasis/.vim/plugin/supertab.vim')
