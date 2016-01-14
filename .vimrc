@@ -12,18 +12,6 @@ set textwidth=80
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-" Plugin 'gmarik/Vundle.vim'
-" Plugin 'davidhalter/jedi-vim'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
 filetype plugin indent on    " required
 map <C-L> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR>
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
@@ -54,9 +42,10 @@ augroup filetype
 augroup END
 
 nnoremap <silent> s i<cr><Esc>
-nnoremap <silent> <c-j> :make<cr><cr>
 nnoremap Q <nop>
 
 set ruler
 
 autocmd FileType python setlocal completeopt-=preview
+set viminfo='100,<50,s10,%
+set tags=./tags;
